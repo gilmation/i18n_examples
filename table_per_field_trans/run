@@ -1,3 +1,0 @@
-#/bin/bash
-
-mysql --host=172.16.193.131 --user=root --verbose -e '\. schema.sql'

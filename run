@@ -1,0 +1,31 @@
+#!/bin/bash
+
+ARGS_EXPECTED=2
+
+if [[ $# -ne $ARGS_EXPECTED ]]; then
+  echo "Usage: `basename $0` host sub_directory"
+  exit 1
+fi
+
+if [[ ! -d ./$2 ]]; then
+  echo "Oops, [./$2] does not exist !"
+  echo "You must be having a laugh, bailing"
+  exit 1
+fi
+
+if [[ ! -f ./$2/schema.sql ]]; then
+  echo "Oops, [./$2/schema.sql] does not exist !"
+  echo "You must be having a laugh, bailing"
+  exit 1
+fi
+
+if [[ ! -f ./$2/data.sql ]]; then
+  echo "Oops, [./$2/data.sql] does not exist !"
+  echo "You must be having a laugh, bailing"
+  exit 1
+fi
+
+cd $2
+mysql --host=$1 --user=root --verbose -e '\. schema.sql'
+mysql --host=$1 --user=root --verbose -e '\. data.sql'
+cd -

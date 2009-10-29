@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS i18n_2;
-CREATE DATABASE i18n_2 DEFAULT CHARACTER SET latin1;
+DROP DATABASE IF EXISTS i18n_table_per_field_trans;
+CREATE DATABASE i18n_table_per_field_trans DEFAULT CHARACTER SET latin1;
 
 -- --------------------------------------------------------
 
-USE i18n_2;
+USE i18n_table_per_field_trans;
 
 --
 -- Table structure for table 'locale'

@@ -1,9 +1,10 @@
-DROP DATABASE IF EXISTS i18n;
-CREATE DATABASE i18n DEFAULT CHARACTER SET latin1;
+DROP DATABASE IF EXISTS i18n_single_table_for_all_trans;
+
+CREATE DATABASE i18n_single_table_for_all_trans DEFAULT CHARACTER SET latin1;
 
 -- --------------------------------------------------------
 
-USE i18n;
+USE i18n_single_table_for_all_trans;
 
 -- --------------------------------------------------------
 
