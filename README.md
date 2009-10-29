@@ -1,6 +1,8 @@
 # i18n_examples 
 Example database configurations for i18n of dynamic user data.
-For each example this document contains:
+
+For each example this document contains
+
 * Description
 * Discussion of the Pros <span class="amp">&amp;</span> Cons of this choice 
 * When you would be likely to want to use it. 
@@ -8,7 +10,8 @@ For each example this document contains:
 * A diagram with some sample data 
 * Commands to run in order to install and populate the sample database
 
-For each example there is a sub-directory which contains SQL scripts which:
+For each example there is a sub-directory which contains SQL scripts which
+
 * Create of a sample schema
 * Populate this schema with some example data
 
@@ -47,7 +50,7 @@ Care needs to be taken to allow the system to cater for more than one translatio
 
 <h2 id="single-schema">Database Schema</h2>
 
-![Single Table for all Translations](./single_table_for_all_trans/single_table_for_all_trans.jpg "Single Table for all Translations")
+![Single Table for all Translations](./tree/master/single_table_for_all_trans/single_table_for_all_trans.jpg "Single Table for all Translations")
 
 <h2 id="single-data">Sample Data</h2>
 
@@ -77,7 +80,7 @@ Separate tables which are created and used for each field that is to be translat
 
 <h2 id="separate-schema">Database Schema</h2>
 
-![Table per field Translations](./table_per_field_trans/table_per_field_trans.jpg "A Table of Translations for every Field")
+![Table per field Translations](./tree/master/table_per_field_trans/table_per_field_trans.jpg "A Table of Translations for every Field")
 
 <h2 id="separate-data">Sample Data</h2>
 
