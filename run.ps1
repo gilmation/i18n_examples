@@ -35,8 +35,8 @@ if(!(Test-Path ".\$dirValue\data.sql")) {
 
 cd $dirValue
 
-& "$env:MYSQL_HOME\mysql.exe" --host=$ipValue --user=root -e '\. schema.sql'
-& "$env:MYSQL_HOME\mysql.exe" --host=$ipValue --user=root -e '\. data.sql'
+& "$env:MYSQL_HOME\mysql.exe" "--host=$ipValue" --user=root -e '\. schema.sql'
+& "$env:MYSQL_HOME\mysql.exe" "--host=$ipValue" --user=root -e '\. data.sql'
 
 cd ..
 
